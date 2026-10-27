@@ -83,19 +83,3 @@ pio device monitor -b 115200
 - Input: rotary encoder + ISR на `CHANGE`
 
 ---
-
-## Limitations / next
-
-- Немає PID / фільтра / телеметрії з CRC
-- У loop є `delay(150)` на debounce кнопки
-- Один файл прошивки — далі варто рознести driver / tracker / UI
-
-**Next (портфоліо):** PID по дистанції або куту, soft-fail при втраті ToF, бінарний UART-кадр з CRC, або dual-MCU (ESP32 сенсори → STM32 актуатор).
-
----
-
-## Author
-
-[MaxZorro-GG](https://github.com/MaxZorro-GG) · частина шляху до junior embedded (STM32 / sensors / control)
-
-Виділено з [beetroot-homework](https://github.com/MaxZorro-GG/beetroot-homework) (`target-tracker-radar`). Оригінальний репозиторій курсу не змінювався.
